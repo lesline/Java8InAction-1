@@ -51,6 +51,7 @@ public class AsyncShopTest {
         () -> futurePrice.get()
     );
 
+    System.out.println(rte);
     assertThat(rte.getMessage(), is("java.lang.RuntimeException: product not available"));
   }
 
