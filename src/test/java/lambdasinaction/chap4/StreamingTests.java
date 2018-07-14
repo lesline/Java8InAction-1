@@ -33,6 +33,8 @@ public class StreamingTests {
   @Test
   @DisplayName("Get sorted list of names of low caloric dishes using idomatic Java7")
   public void shouldGetLowCaloricDishesNamesInJava7(){
+    System.out.println(getSortedLowCaloricDishesNamesInJava7(Restaurant.MENU));
+    System.out.println(expectedLowCaloricDishNames);
     assertThat(getSortedLowCaloricDishesNamesInJava7(Restaurant.MENU), is(expectedLowCaloricDishNames));
   }
 
